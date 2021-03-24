@@ -7,7 +7,7 @@ import Base.print_matrix #Printing less gross matrix
 
 
 #Corrfunc
-np = pyimport("numpy")                  
+np     = pyimport("numpy")                  
 theory = pyimport("Corrfunc.theory")
 
 
@@ -111,12 +111,12 @@ function PointGen(r, x, y, z)
 end
 
 
-#Find maximim radius in Galaxy list for Box size in corrfunc
+#Find maximum radius in Galaxy list for Box size in corrfunc
 function BoxFinder(Galaxy)
     len2 = length( Galaxy[:,1] )
     r = zeros(len2)
     for i in 1:len2
-        r[i] = sqrt(sum(Galaxy[i,1:2].^2))
+        r[i] = sqrt(sum(Galaxy[i,1:3].^2))
     end
     return (maximum(r))
 end
