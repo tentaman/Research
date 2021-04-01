@@ -1,3 +1,4 @@
+```julia
 using NPZ
 using Interpolations
 using Polynomials, SpecialPolynomials
@@ -53,6 +54,13 @@ function main()
 end 
 
 main()
+```
+
+```
+(0.4444444444444444, 5.551115123125783e-17)
+(130.99683642700825, 1.3090284434852449e-6)
+```
 
 
-
+![](figures/Interpolation_0_1.png)
+![](figures/Interpolation_0_2.png)
